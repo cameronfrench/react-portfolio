@@ -1,13 +1,23 @@
+import React from 'react';
+import NavbarDefault from './components/Navigation';
+import About from './components/pages/About';
+import Portfolio from './components/pages/Portfolio';
+
+
 function App() {
   return (
-    <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
-      <p className="text-3xl text-gray-700 font-bold mb-5">
-        Welcome!
-      </p>
-      <p className="text-gray-500 text-lg">
-        React and Tailwind CSS in action
-      </p>
-    </div>
+    <main className='relative isolate overflow-y-auto overflow-x-hidden bg-gradient-to-r from-gray-200 via-white-100to-gray-100 ... py-4 h-screen'>
+      <div className="flex flex-col items-center">
+        <NavbarDefault />
+        <div className="w-full max-w-screen-2xl">
+          <About />
+        </div>
+        <div className="w-full max-w-screen-2xl">
+          <Portfolio />
+        </div>
+      </div>
+    </main>
   );
 }
+
 export default App;
