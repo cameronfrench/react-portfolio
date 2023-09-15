@@ -2,6 +2,8 @@ import React from 'react';
 import NavbarDefault from './components/Navigation';
 import About from './components/pages/About';
 import Portfolio from './components/pages/Portfolio';
+import Contact from './components/pages/Contact';
+// import Resume from './components/pages/Resume'; 
 
 
 function App() {
@@ -14,6 +16,9 @@ function App() {
         </div>
         <div className="w-full max-w-screen-2xl">
           <Portfolio />
+        </div>
+        <div className="w-full max-w-screen-2xl">
+          <Contact />
         </div>
       </div>
     </main>

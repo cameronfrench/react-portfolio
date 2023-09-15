@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+
 import {
   Card,
   CardHeader,
@@ -10,11 +11,15 @@ import {
 
 export default function Portfolio() {
   return (
-    
     <div className="w-full max-w-screen-2xl">
-      <Card className="mt-8" style={{ minHeight: "800px" }}>
-        <div className="grid grid-cols-2 gap-10 justify-around items-center">
-          <Card className="mt-6 w-96 lg:mr-6">
+      <Card className="mt-8 h-fit">
+        <div className="p-16">
+          <Typography variant="h2" color="blue-gray" className="mb-2 text-4xl">
+            Projects
+          </Typography>
+        </div>
+        <div className=" mx-auto grid grid-cols-2 gap-4 justify-evenly items-center p-5">
+          <Card className="mt-6 w-full lg:mr-6 ">
             <CardHeader color="blue-gray" className="relative h-56">
               <img
                 src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
@@ -23,19 +28,20 @@ export default function Portfolio() {
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="mb-2">
-                UI/UX Review Check
+                Social Media API
               </Typography>
               <Typography>
-                The place is close to Barceloneta Beach and bus stop just 2 min by
-                walk and near to &quot;Naviglio&quot; where you can enjoy the main
-                night life in Barcelona.
+                A Social Network API that utilizes NoSQL, Express.js, and
+                Mongoose that can be used for a social network application.
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-              <Button>Read More</Button>
+              <a href="https://github.com/cameronfrench/social-network-api">
+                <Button>View Project</Button>
+              </a>
             </CardFooter>
           </Card>
-          <Card className="mt-6 w-96 lg:mr-6">
+          <Card className="mt-6 w-full lg:mr-6">
             <CardHeader color="blue-gray" className="relative h-56">
               <img
                 src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
@@ -44,19 +50,21 @@ export default function Portfolio() {
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="mb-2">
-                UI/UX Review Check
+                Weather Dashboard
               </Typography>
               <Typography>
-                The place is close to Barceloneta Beach and bus stop just 2 min by
-                walk and near to &quot;Naviglio&quot; where you can enjoy the main
-                night life in Barcelona.
+                A Weather Dashboard that incorporates a search function by City,
+                to which then current weather of that city would display as well
+                as a 5 Day Forecast.
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-              <Button>Read More</Button>
+              <a href="https://github.com/cameronfrench/weather-dashboard">
+                <Button>View Project</Button>
+              </a>
             </CardFooter>
           </Card>
-          <Card className="mt-6 w-96 lg:mr-6">
+          <Card className="mt-6 w-full lg:mr-6">
             <CardHeader color="blue-gray" className="relative h-56">
               <img
                 src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
@@ -65,19 +73,20 @@ export default function Portfolio() {
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="mb-2">
-                UI/UX Review Check
+                Professional README Generator
               </Typography>
               <Typography>
-                The place is close to Barceloneta Beach and bus stop just 2 min by
-                walk and near to &quot;Naviglio&quot; where you can enjoy the main
-                night life in Barcelona.
+                A command-line application that generates a professional
+                README.md file for the project you are working on.
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-              <Button>Read More</Button>
+              <a href="https://github.com/cameronfrench/professional-readme-generator">
+                <Button>View Project</Button>
+              </a>
             </CardFooter>
           </Card>
-          <Card className="mt-6 w-96">
+          <Card className="mt-6 w-full">
             <CardHeader color="blue-gray" className="relative h-56">
               <img
                 src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
@@ -86,16 +95,18 @@ export default function Portfolio() {
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="mb-2">
-                UI/UX Review Check
+                Note Taker
               </Typography>
               <Typography>
-                The place is close to Barceloneta Beach and bus stop just 2 min by
-                walk and near to &quot;Naviglio&quot; where you can enjoy the main
-                night life in Barcelona.
+                A Note Taker application that takes input for a note, consisting
+                of a note title and note text. You can then save that note and
+                it will appear on the left side of the screen.
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-              <Button>Read More</Button>
+              <a href="https://github.com/cameronfrench/note-taker">
+                <Button>View Project</Button>
+              </a>
             </CardFooter>
           </Card>
         </div>
